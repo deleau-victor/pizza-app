@@ -1,0 +1,312 @@
+{
+	"Classics": [
+		{
+			"id": 0,
+			"name": "Margherita",
+			"price": 11.0,
+			"description": "",
+			"picture": "https://",
+			"infredients": ["Mozzarella", "Olive", "Oregano"]
+		},
+		{
+			"id": 1,
+			"name": "Proscuuitto",
+			"price": 13.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": ["Mozzarella", "Cured Ham", "Olive", "Oregano"]
+		},
+		{
+			"id": 2,
+			"name": "Regina",
+			"price": 14.0,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Cured Ham",
+				"Mushrooms",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 3,
+			"name": "Bolognese",
+			"price": 16.0,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Beef",
+				"Cherry tomatoes",
+				"Onions",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 4,
+			"name": "Mammamia",
+			"price": 16.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Chorizo",
+				"Merguez",
+				"Onions",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 5,
+			"name": "Burrata",
+			"price": 18,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Burrata",
+				"Parma ham",
+				"Cherry tomatoes",
+				"Olive",
+				"Mesclun"
+			]
+		},
+		{
+			"id": 6,
+			"name": "Royal",
+			"price": 15,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Mushrooms",
+				"Cured Ham",
+				"Egg",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 7,
+			"name": "Primavera",
+			"price": 15.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Cured Ham",
+				"Artichoke",
+				"Cherry tomatoes",
+				"Peppers",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 8,
+			"name": "Calzone",
+			"price": 15.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": ["Mozzarella", "Cream", "Cured Ham", "Egg", "Oregano"]
+		}
+	],
+	"Signature": [
+		{
+			"id": 9,
+			"name": "DrugStore",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Parma ham",
+				"Goat cheese",
+				"Olive",
+				"Oregano",
+				"Mesclun"
+			]
+		},
+		{
+			"id": 10,
+			"name": "Al Tonno",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Onions",
+				"Tuna",
+				"Mushrooms",
+				"Cream",
+				"Parsley",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 11,
+			"name": "Savoiardo",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Bacon bits",
+				"Mushrooms",
+				"Raclette cheese",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 12,
+			"name": "Miele",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Cured Ham",
+				"Goat cheese",
+				"Honey",
+				"Cream",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 13,
+			"name": "Normana",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Camembert",
+				"Bacon bits",
+				"Mushrooms",
+				"Cream",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 14,
+			"name": "Ginette",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Cured Ham",
+				"Merguez",
+				"Chorizo",
+				"Roast Chicken",
+				"Egg",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 15,
+			"name": "Tartiflette",
+			"price": 16.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Potatoes",
+				"Bacon bits",
+				"Reblochon",
+				"Cream",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 16,
+			"name": "Salmone",
+			"price": 17,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Smoked Salmon",
+				"Salmon filet",
+				"Cream",
+				"Olive",
+				"Oregano"
+			]
+		}
+	],
+	"Vegetarian": [
+		{
+			"id": 17,
+			"name": "Pera",
+			"price": 16,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Goat cheese",
+				"Pear",
+				"Honey",
+				"Mesclun",
+				"Oregano"
+			]
+		},
+		{
+			"id": 18,
+			"name": "Quattro Stagioni",
+			"price": 15.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Mushrooms",
+				"Artichoke",
+				"Cherry tomatoes",
+				"Peppers",
+				"Parsley",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 19,
+			"name": "Quattro Formaggi",
+			"price": 16.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Gorgonzola",
+				"Goat cheese",
+				"Camembert",
+				"Cream",
+				"Olive",
+				"Oregano"
+			]
+		},
+		{
+			"id": 20,
+			"name": "Bella",
+			"price": 15.5,
+			"description": "",
+			"picture": "https://",
+			"infredients": [
+				"Mozzarella",
+				"Pineapple",
+				"Goat cheese",
+				"Mushrooms",
+				"Basil",
+				"Olive",
+				"Oregano"
+			]
+		}
+	]
+}
