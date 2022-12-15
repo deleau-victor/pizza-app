@@ -5,24 +5,24 @@
 			"name": "Margherita",
 			"price": 11.0,
 			"description": "",
-			"picture": "https://",
-			"infredients": ["Mozzarella", "Olive", "Oregano"]
+			"picture": "https://static.vecteezy.com/system/resources/previews/008/541/871/non_2x/margherita-pizza-baked-food-transparent-png.png",
+			"ingredients": ["Mozzarella", "Olive", "Oregano"]
 		},
 		{
 			"id": 1,
 			"name": "Proscuuitto",
 			"price": 13.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": ["Mozzarella", "Cured Ham", "Olive", "Oregano"]
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/jambon.png",
+			"ingredients": ["Mozzarella", "Cured Ham", "Olive", "Oregano"]
 		},
 		{
 			"id": 2,
 			"name": "Regina",
 			"price": 14.0,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/04/pizza-1.jpg",
+			"ingredients": [
 				"Mozzarella",
 				"Cured Ham",
 				"Mushrooms",
@@ -35,8 +35,8 @@
 			"name": "Bolognese",
 			"price": 16.0,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Beef",
 				"Cherry tomatoes",
@@ -50,8 +50,8 @@
 			"name": "Mammamia",
 			"price": 16.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Chorizo",
 				"Merguez",
@@ -65,8 +65,8 @@
 			"name": "Burrata",
 			"price": 18,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/08/buffala.png",
+			"ingredients": [
 				"Burrata",
 				"Parma ham",
 				"Cherry tomatoes",
@@ -79,8 +79,8 @@
 			"name": "Royal",
 			"price": 15,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/chef.png",
+			"ingredients": [
 				"Mozzarella",
 				"Mushrooms",
 				"Cured Ham",
@@ -94,8 +94,8 @@
 			"name": "Primavera",
 			"price": 15.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Cured Ham",
 				"Artichoke",
@@ -110,8 +110,8 @@
 			"name": "Calzone",
 			"price": 15.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": ["Mozzarella", "Cream", "Cured Ham", "Egg", "Oregano"]
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": ["Mozzarella", "Cream", "Cured Ham", "Egg", "Oregano"]
 		}
 	],
 	"Signature": [
@@ -120,8 +120,8 @@
 			"name": "DrugStore",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Parma ham",
 				"Goat cheese",
@@ -135,8 +135,8 @@
 			"name": "Al Tonno",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Onions",
 				"Tuna",
@@ -152,8 +152,8 @@
 			"name": "Savoiardo",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Bacon bits",
 				"Mushrooms",
@@ -167,8 +167,8 @@
 			"name": "Miele",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Cured Ham",
 				"Goat cheese",
@@ -183,8 +183,8 @@
 			"name": "Normana",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Camembert",
 				"Bacon bits",
@@ -199,8 +199,8 @@
 			"name": "Ginette",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Cured Ham",
 				"Merguez",
@@ -216,8 +216,8 @@
 			"name": "Tartiflette",
 			"price": 16.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Potatoes",
 				"Bacon bits",
@@ -232,8 +232,8 @@
 			"name": "Salmone",
 			"price": 17,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Smoked Salmon",
 				"Salmon filet",
@@ -249,8 +249,8 @@
 			"name": "Pera",
 			"price": 16,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Goat cheese",
 				"Pear",
@@ -264,8 +264,8 @@
 			"name": "Quattro Stagioni",
 			"price": 15.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Mushrooms",
 				"Artichoke",
@@ -281,8 +281,8 @@
 			"name": "Quattro Formaggi",
 			"price": 16.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Gorgonzola",
 				"Goat cheese",
@@ -297,8 +297,8 @@
 			"name": "Bella",
 			"price": 15.5,
 			"description": "",
-			"picture": "https://",
-			"infredients": [
+			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
+			"ingredients": [
 				"Mozzarella",
 				"Pineapple",
 				"Goat cheese",
