@@ -22,8 +22,6 @@ import { Classics, Signature, Vegetarian } from "../../pizza.json"
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, "Home">
 
 const Home: FC<HomeScreenProps> = ({ navigation }) => {
-	const dispatch = useDispatch()
-
 	const count = useSelector((store: any) => store.count)
 
 	return (
@@ -41,9 +39,7 @@ const Home: FC<HomeScreenProps> = ({ navigation }) => {
 								Filter pizzas by ingredients
 							</Text>
 							<Filters />
-							<PizzaCard pizzaType={Classics} title='Classics' />
-							<PizzaCard pizzaType={Signature} title='Signature' />
-							<PizzaCard pizzaType={Vegetarian} title='Vegetarian' />
+							<PizzaCard />
 						</ScrollView>
 					</Column>
 				</Center>

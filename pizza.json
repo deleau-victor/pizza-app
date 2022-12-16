@@ -1,12 +1,12 @@
 {
-	"Classics": [
+	"pizzas": [
 		{
 			"id": 0,
 			"name": "Margherita",
 			"price": 11.0,
 			"description": "",
 			"picture": "https://static.vecteezy.com/system/resources/previews/008/541/871/non_2x/margherita-pizza-baked-food-transparent-png.png",
-			"ingredients": ["Mozzarella", "Olive", "Oregano"]
+			"ingredients": [1, 5, 6]
 		},
 		{
 			"id": 1,
@@ -112,9 +112,8 @@
 			"description": "",
 			"picture": "https://www.sospizza-mamirolle.fr/wp-content/uploads/2021/07/pizzaiole.png",
 			"ingredients": ["Mozzarella", "Cream", "Cured Ham", "Egg", "Oregano"]
-		}
-	],
-	"Signature": [
+		},
+
 		{
 			"id": 9,
 			"name": "DrugStore",
@@ -241,9 +240,7 @@
 				"Olive",
 				"Oregano"
 			]
-		}
-	],
-	"Vegetarian": [
+		},
 		{
 			"id": 17,
 			"name": "Pera",
@@ -308,5 +305,6 @@
 				"Oregano"
 			]
 		}
-	]
+	],
+	"ingredients": [{}]
 }

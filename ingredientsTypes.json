@@ -1,0 +1,13 @@
+{
+	"ingredientTypes": [
+		{ "id": 1, "type": "cheese" },
+		{ "id": 2, "type": "meat" },
+		{ "id": 3, "type": "vegetables" },
+		{ "id": 4, "type": "eggs" },
+		{ "id": 5, "type": "fish" },
+		{ "id": 6, "type": "bacon" },
+		{ "id": 7, "type": "spices" },
+		{ "id": 8, "type": "fruits" },
+		{ "id": 9, "type": "herbs" }
+	]
+}
