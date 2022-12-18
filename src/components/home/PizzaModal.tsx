@@ -8,7 +8,7 @@ import {
 	Flex,
 	Button,
 } from "native-base"
-import React, { FC, useEffect, useState } from "react"
+import React, { FC, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faArrowLeft, faMinus, faPlus } from "@fortawesome/free-solid-svg-icons"
 
@@ -121,11 +121,10 @@ const pizzaModal: FC<PizzaModal> = ({
 							Ingrédients
 						</Text>
 						<Text>
-							{ingredientList.map((ingredient: any) => {
-								return ingredient ===
-									ingredientList[ingredientList.length - 1]
-									? `${ingredient.Ingredient.name}`
-									: `${ingredient.Ingredient.name}, `
+							{ingredientList.map(({ Ingredient }, index) => {
+								return index === ingredientList.length - 1
+									? `${Ingredient.name}`
+									: `${Ingredient.name}, `
 							})}
 						</Text>
 					</Column>

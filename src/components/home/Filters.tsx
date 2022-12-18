@@ -15,7 +15,7 @@ import { addFilter, removeFilter } from "../../slices/filterSlice"
 const filters = [
 	{ name: "cheese", icon: faCheese, id: 1 },
 	{ name: "meat", icon: faDrumstickBite, id: 2 },
-	{ name: "vegetables", icon: faSeedling, id: 3 },
+	{ name: "vegetable", icon: faSeedling, id: 3 },
 	{ name: "egg", icon: faEgg, id: 4 },
 	{ name: "fish", icon: faFish, id: 5 },
 	{ name: "bacon", icon: faBacon, id: 6 },

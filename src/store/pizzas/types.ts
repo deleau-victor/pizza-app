@@ -4,6 +4,6 @@ export interface pizzaType {
 	price: string
 	picture_url: string
 	Compose: {
-		Ingredient: { name: string }
+		Ingredient: { name: string; Ingredient_Type: { name: string } }
 	}[]
 }

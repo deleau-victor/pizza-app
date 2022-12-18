@@ -12,16 +12,23 @@ import React, { useEffect, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../hooks/typedReduxHooks"
 import PizzaModal from "./PizzaModal"
 import { getPizzas } from "../../slices/pizzaSlice"
+import { pizzaType } from "../../store/pizzas/types"
+import filterByIngredientType from "../../utils/filterByIngredientType"
 
 const pizzaCard = () => {
 	const dispatch = useAppDispatch()
 	const [isModalOpen, setIsModalOpen] = useState<number | null>(null)
 	const filterState = useAppSelector((state) => state.filter)
 	const { data, loading, error } = useAppSelector((state) => state.pizza)
+	const [pizzas, setPizzas] = useState<pizzaType[]>(data)
 
 	useEffect(() => {
 		dispatch(getPizzas())
-	}, [filterState, dispatch])
+	}, [dispatch])
+
+	useEffect(() => {
+		setPizzas(filterByIngredientType(data, filterState))
+	}, [filterState, data])
 
 	if (loading === "idle") {
 		return (
@@ -36,7 +43,7 @@ const pizzaCard = () => {
 					wrap='wrap'
 					justifyContent='space-between'
 					px='2'>
-					{data.map(
+					{pizzas.map(
 						({ name, picture_url, price, Compose, id_pizza }, index) => {
 							return (
 								<Pressable
@@ -108,8 +115,6 @@ const pizzaCard = () => {
 				<Spinner accessibilityLabel='Loading' />
 			</Center>
 		)
-	} else if (error !== null) {
-		return <Text>{error}</Text>
 	} else {
 		return <Text>{error}</Text>
 	}
