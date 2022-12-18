@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 const initialState: string[] = []
 
@@ -6,10 +6,10 @@ const filterSlice = createSlice({
 	name: "filter",
 	initialState: initialState,
 	reducers: {
-		addFilter: (state, action) => {
+		addFilter: (state, action: PayloadAction<string>) => {
 			return (state = [...state, action.payload])
 		},
-		removeFilter: (state, action) => {
+		removeFilter: (state, action: PayloadAction<string>) => {
 			const indexToRemove = state.findIndex(
 				(element) => element === action.payload,
 			)

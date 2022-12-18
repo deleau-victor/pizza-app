@@ -14,7 +14,7 @@ import { faArrowLeft, faMinus, faPlus } from "@fortawesome/free-solid-svg-icons"
 
 type PizzaModal = {
 	name: string
-	ingredients: string[]
+	ingredientList: { Ingredient: { name: string } }[]
 	picture: string
 	modalIndex: number | null
 	closeModal: () => void
@@ -24,7 +24,7 @@ type PizzaModal = {
 
 const pizzaModal: FC<PizzaModal> = ({
 	name,
-	ingredients,
+	ingredientList,
 	picture,
 	modalIndex,
 	closeModal,
@@ -121,11 +121,11 @@ const pizzaModal: FC<PizzaModal> = ({
 							Ingrédients
 						</Text>
 						<Text>
-							{ingredients.map((ingredient) => {
+							{ingredientList.map((ingredient: any) => {
 								return ingredient ===
-									ingredients[ingredients.length - 1]
-									? `${ingredient}`
-									: `${ingredient}, `
+									ingredientList[ingredientList.length - 1]
+									? `${ingredient.Ingredient.name}`
+									: `${ingredient.Ingredient.name}, `
 							})}
 						</Text>
 					</Column>
