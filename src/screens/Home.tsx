@@ -1,29 +1,16 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
-import {
-	Button,
-	Center,
-	Text,
-	Column,
-	StatusBar,
-	ScrollView,
-	Row,
-} from "native-base"
-import React, { FC, useEffect } from "react"
+import { Center, Text, Column, StatusBar, ScrollView, Row } from "native-base"
+import React, { FC } from "react"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { RootStackParamList } from "../../types"
-import { useDispatch, useSelector } from "react-redux"
+import { RootStackParamList } from "../routes/types"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import Filters from "../components/home/Filters"
 import { faBars, faShoppingBasket } from "@fortawesome/free-solid-svg-icons"
-import * as SecureStore from "expo-secure-store"
 import PizzaCard from "../components/home/PizzaCard"
-import { Classics, Signature, Vegetarian } from "../../pizza.json"
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, "Home">
 
 const Home: FC<HomeScreenProps> = ({ navigation }) => {
-	const count = useSelector((store: any) => store.count)
-
 	return (
 		<>
 			<StatusBar barStyle={"light-content"}></StatusBar>

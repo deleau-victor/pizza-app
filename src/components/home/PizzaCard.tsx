@@ -1,4 +1,13 @@
-import { Box, Column, Text, Image, Flex, Pressable } from "native-base"
+import {
+	Box,
+	Column,
+	Text,
+	Image,
+	Flex,
+	Pressable,
+	Center,
+	Spinner,
+} from "native-base"
 import React, { useEffect, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../../hooks/typedReduxHooks"
 import PizzaModal from "./PizzaModal"
@@ -94,8 +103,14 @@ const pizzaCard = () => {
 			</Box>
 		)
 	} else if (loading === "pending") {
-		return <Text>Loading</Text>
+		return (
+			<Center w='full' h='full'>
+				<Spinner accessibilityLabel='Loading' />
+			</Center>
+		)
 	} else if (error !== null) {
+		return <Text>{error}</Text>
+	} else {
 		return <Text>{error}</Text>
 	}
 }

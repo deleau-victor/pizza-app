@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { RootStackParamList } from '../../types'
-import Home from '../screens/Home'
-import Welcome from '../screens/Welcome'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { Center, Spinner } from 'native-base'
-import * as SecureStore from 'expo-secure-store'
+import React, { useEffect, useState } from "react"
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { RootStackParamList } from "./types"
+import Home from "../screens/Home"
+import Welcome from "../screens/Welcome"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { Center, Spinner } from "native-base"
+import * as SecureStore from "expo-secure-store"
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
@@ -16,12 +15,12 @@ export const RootNavigator = () => {
 	const [loading, setLoading] = useState<boolean>(true)
 
 	const chooseScreen = async () => {
-		await SecureStore.getItemAsync('firstTime')
+		await SecureStore.getItemAsync("firstTime")
 			.then(async (result) => {
 				if (result != undefined) {
 					setShouldDisplayWelcome(false)
 				} else {
-					await SecureStore.setItemAsync('firstTime', 'false')
+					await SecureStore.setItemAsync("firstTime", "false")
 				}
 			})
 			.finally(() => {
@@ -43,16 +42,15 @@ export const RootNavigator = () => {
 				</SafeAreaView>
 			) : (
 				<Stack.Navigator
-					initialRouteName={shouldDisplayWelcome ? 'Welcome' : 'Home'}
-				>
+					initialRouteName={shouldDisplayWelcome ? "Welcome" : "Home"}>
 					<Stack.Group>
 						<Stack.Screen
 							name='Home'
 							component={Home}
 							options={{
-								animation: 'fade',
+								animation: "fade",
 								headerTransparent: true,
-								title: '',
+								title: "",
 								headerBackVisible: false,
 							}}
 						/>
@@ -60,9 +58,9 @@ export const RootNavigator = () => {
 							name='Welcome'
 							component={Welcome}
 							options={{
-								animation: 'fade',
+								animation: "fade",
 								headerTransparent: true,
-								title: '',
+								title: "",
 								headerBackVisible: false,
 							}}
 						/>
