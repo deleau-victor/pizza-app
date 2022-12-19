@@ -11,6 +11,8 @@ import {
 import React, { FC, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 import { faArrowLeft, faMinus, faPlus } from "@fortawesome/free-solid-svg-icons"
+import { useAppDispatch } from "../../hooks/typedReduxHooks"
+import { addPizza } from "../../slices/basketSlice"
 
 type PizzaModal = {
 	name: string
@@ -19,7 +21,8 @@ type PizzaModal = {
 	modalIndex: number | null
 	closeModal: () => void
 	index: number
-	price: number
+	price: string
+	id: number
 }
 
 const pizzaModal: FC<PizzaModal> = ({
@@ -30,12 +33,45 @@ const pizzaModal: FC<PizzaModal> = ({
 	closeModal,
 	index,
 	price,
+	id,
 }) => {
 	const [pizzaCount, setPizzaCount] = useState<number>(0)
+	const [isAllergensSelected, setisAllergensSelected] =
+		useState<boolean>(false)
+	const dispatch = useAppDispatch()
 
 	const handleCloseModal = () => {
 		setPizzaCount(0)
 		closeModal()
+	}
+
+	const handleSelectIngredients = () => {
+		setisAllergensSelected(false)
+	}
+
+	const handleSelectAllergens = () => {
+		setisAllergensSelected(true)
+	}
+
+	const handleAddPizza = (
+		pizzaName: string,
+		price: string,
+		picture_url: string,
+		id_pizza: number,
+	) => {
+		if (pizzaCount === 0) {
+		} else {
+			dispatch(
+				addPizza({
+					name: pizzaName,
+					picture: picture_url,
+					price: price,
+					id: id_pizza,
+					count: pizzaCount,
+				}),
+			)
+			handleCloseModal()
+		}
 	}
 
 	return (
@@ -112,27 +148,45 @@ const pizzaModal: FC<PizzaModal> = ({
 								Price
 							</Text>
 							<Text fontSize='md' textAlign='right' fontWeight='bold'>
-								{`$${price.toFixed(2)}`}
+								{`$${Number(price).toFixed(2)}`}
 							</Text>
 						</Column>
 					</Row>
 					<Column justifyItems='flex-start' w='full'>
-						<Text fontSize='md' fontWeight='bold'>
-							Ingrédients
-						</Text>
+						<Row space={3}>
+							<Pressable onPress={() => handleSelectIngredients()}>
+								<Text
+									fontSize='md'
+									fontWeight={!isAllergensSelected ? "bold" : "normal"}
+									color={!isAllergensSelected ? "black" : "gray.500"}>
+									Ingrédients
+								</Text>
+							</Pressable>
+							<Pressable onPress={() => handleSelectAllergens()}>
+								<Text
+									fontSize={"md"}
+									fontWeight={isAllergensSelected ? "bold" : "normal"}
+									color={isAllergensSelected ? "black" : "gray.500"}>
+									Allergènes
+								</Text>
+							</Pressable>
+						</Row>
+
 						<Text>
-							{ingredientList.map(({ Ingredient }, index) => {
-								return index === ingredientList.length - 1
-									? `${Ingredient.name}`
-									: `${Ingredient.name}, `
-							})}
+							{isAllergensSelected
+								? ""
+								: ingredientList.map(({ Ingredient }, index) => {
+										return index === ingredientList.length - 1
+											? `${Ingredient.name}`
+											: `${Ingredient.name}, `
+								  })}
 						</Text>
 					</Column>
 					<Button
 						w='full'
 						colorScheme='orange'
 						rounded='full'
-						onPress={() => {}}>
+						onPress={() => handleAddPizza(name, price, picture, id)}>
 						<Text fontWeight='bold' color='white' fontSize='md'>
 							Add to cart
 						</Text>

@@ -14,6 +14,7 @@ import PizzaModal from "./PizzaModal"
 import { getPizzas } from "../../slices/pizzaSlice"
 import { pizzaType } from "../../store/pizzas/types"
 import filterByIngredientType from "../../utils/filterByIngredientType"
+import { addPizza } from "../../slices/basketSlice"
 
 const pizzaCard = () => {
 	const dispatch = useAppDispatch()
@@ -29,6 +30,23 @@ const pizzaCard = () => {
 	useEffect(() => {
 		setPizzas(filterByIngredientType(data, filterState))
 	}, [filterState, data])
+
+	const handleAddPizza = (
+		pizzaName: string,
+		price: string,
+		picture_url: string,
+		id_pizza: number,
+	) => {
+		dispatch(
+			addPizza({
+				name: pizzaName,
+				picture: picture_url,
+				price: price,
+				id: id_pizza,
+				count: 1,
+			}),
+		)
+	}
 
 	if (loading === "idle") {
 		return (
@@ -84,7 +102,14 @@ const pizzaCard = () => {
 											pb='1'
 											pl='3'
 											rounded='lg'
-											onPress={() => {}}>
+											onPress={() =>
+												handleAddPizza(
+													name,
+													price,
+													picture_url,
+													id_pizza,
+												)
+											}>
 											<Text
 												color='white'
 												fontSize='lg'
@@ -100,7 +125,8 @@ const pizzaCard = () => {
 										picture={picture_url}
 										modalIndex={isModalOpen}
 										index={index}
-										price={Number(price)}
+										price={price}
+										id={id_pizza}
 									/>
 								</Pressable>
 							)
