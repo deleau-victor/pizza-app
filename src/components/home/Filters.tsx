@@ -23,11 +23,11 @@ const filters = [
 
 const Filters = () => {
 	const [selectedFilters, setSelectedFilters] = useState<number[]>([])
-
 	const isSelected = (id: number) => selectedFilters.includes(id)
 
 	const dispatch = useDispatch()
 
+	// Gestion de l'application des filtres
 	const handlePress = (id: number, filterName: string) => {
 		if (!isSelected(id)) {
 			dispatch(addFilter(filterName))

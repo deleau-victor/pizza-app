@@ -14,6 +14,7 @@ export const RootNavigator = () => {
 		useState<boolean>(true)
 	const [loading, setLoading] = useState<boolean>(true)
 
+	// Vérifie si l'utilisateur a déjà utiliser l'application
 	const chooseScreen = async () => {
 		await SecureStore.getItemAsync("firstTime")
 			.then(async (result) => {

@@ -26,6 +26,9 @@ const Basket: FC<BasketProps> = ({ isOpen, closeModal }) => {
 						Total count of pizzas : {basketData.totalCount}
 					</Text>
 					<BasketTable />
+					<Text fontSize='md' fontWeight='bold'>
+						Prix total : {basketData.totalPrice.toFixed(2)}€
+					</Text>
 					<Button colorScheme='orange' rounded='full' px={4} mt={4}>
 						<Text color='white' fontSize='lg' fontWeight='bold'>
 							Order

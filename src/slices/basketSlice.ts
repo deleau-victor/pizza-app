@@ -4,6 +4,7 @@ import { IBasket } from "../store/basket/types"
 const INITIAL_STATE: IBasket = {
 	pizzas: [],
 	totalCount: 0,
+	totalPrice: 0,
 }
 
 const basketSlice = createSlice({
@@ -20,12 +21,14 @@ const basketSlice = createSlice({
 				state.pizzas = [...state.pizzas, action.payload]
 			}
 			state.totalCount += action.payload.count
+			state.totalPrice += action.payload.price * action.payload.count
 			return state
 		},
 		removePizza: (state, action: PayloadAction<number>) => {
 			let index = state.pizzas.findIndex(
 				(pizza) => pizza.id === action.payload,
 			)
+			state.totalPrice -= state.pizzas[index].price
 			if (state.pizzas[index].count === 1) {
 				state.pizzas.splice(index, 1)
 			} else {

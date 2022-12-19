@@ -17,16 +17,17 @@ type WelcomeScreenProps = NativeStackScreenProps<RootStackParamList, "Welcome">
 
 const Welcome: FC<WelcomeScreenProps> = ({ navigation }) => {
 	const [image, setImage] = useState<string>("logo")
-	const [title, setTitle] = useState<string>("Pizzeria Massimiliano de Roma")
+	const [title, setTitle] = useState<string>("Pizzeria de Roma")
 	const [description, setDescription] = useState<string>(
 		"The authentic italian pizzeria",
 	)
 
+	// Permet de changer de carte de présentation
 	const handleChangeCard = (value: string) => {
 		switch (value) {
 			case "one":
 				setImage("logo")
-				setTitle("Pizzeria Massimiliano de Roma")
+				setTitle("Pizzeria de Roma")
 				setDescription("The authentic Italian pizzeria")
 				break
 			case "two":

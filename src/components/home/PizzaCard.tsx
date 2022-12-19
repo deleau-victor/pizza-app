@@ -23,14 +23,17 @@ const pizzaCard = () => {
 	const { data, loading, error } = useAppSelector((state) => state.pizza)
 	const [pizzas, setPizzas] = useState<pizzaType[]>(data)
 
+	// Appel API pour récupérer les pizzas
 	useEffect(() => {
 		dispatch(getPizzas())
 	}, [dispatch])
 
+	// Rerendu du map en fonction des filtres appliqués
 	useEffect(() => {
 		setPizzas(filterByIngredientType(data, filterState))
 	}, [filterState, data])
 
+	// Ajout d'une pizza au panier à la volée
 	const handleAddPizza = (
 		pizzaName: string,
 		price: string,
@@ -41,7 +44,7 @@ const pizzaCard = () => {
 			addPizza({
 				name: pizzaName,
 				picture: picture_url,
-				price: price,
+				price: Number(price),
 				id: id_pizza,
 				count: 1,
 			}),

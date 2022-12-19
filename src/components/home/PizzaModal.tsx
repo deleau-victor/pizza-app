@@ -40,19 +40,21 @@ const pizzaModal: FC<PizzaModal> = ({
 		useState<boolean>(false)
 	const dispatch = useAppDispatch()
 
+	// Remet le compteur à 0 en fermant la modal
 	const handleCloseModal = () => {
 		setPizzaCount(0)
 		closeModal()
 	}
 
+	// Affichage des ingrédients ou des allergènes
 	const handleSelectIngredients = () => {
 		setisAllergensSelected(false)
 	}
-
 	const handleSelectAllergens = () => {
 		setisAllergensSelected(true)
 	}
 
+	// Ajout d'une ou plusieurs pizza au panier
 	const handleAddPizza = (
 		pizzaName: string,
 		price: string,
@@ -65,7 +67,7 @@ const pizzaModal: FC<PizzaModal> = ({
 				addPizza({
 					name: pizzaName,
 					picture: picture_url,
-					price: price,
+					price: Number(price),
 					id: id_pizza,
 					count: pizzaCount,
 				}),

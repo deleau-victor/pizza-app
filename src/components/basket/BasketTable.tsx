@@ -9,9 +9,10 @@ const BasketTable = () => {
 	const basketData = useAppSelector((state) => state.basket)
 	const dispatch = useAppDispatch()
 
+	// Ajout d'une pizza
 	const handleAddPizza = (
 		pizzaName: string,
-		price: string,
+		price: number,
 		picture_url: string,
 		id_pizza: number,
 	) => {
@@ -26,6 +27,7 @@ const BasketTable = () => {
 		)
 	}
 
+	// retrait d'une pizza
 	const handleRemovePizza = (id: number) => {
 		dispatch(removePizza(id))
 	}
@@ -64,7 +66,7 @@ const BasketTable = () => {
 									p={1}
 									rounded='full'
 									onPress={() =>
-										handleAddPizza(name, price, picture, id)
+										handleAddPizza(name, Number(price), picture, id)
 									}>
 									<FontAwesomeIcon
 										icon={faPlus}
