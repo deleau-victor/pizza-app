@@ -10,7 +10,6 @@
 ### 📱 UI
 
 ![NativeBase](https://deleau-victor-pro.npkn.net/native-base-badge/)
-![status up](https://napkin-examples.npkn.net/site-status-badge/)
 
 
 
