@@ -1,9 +1,15 @@
-# NativeBase TypeScript Expo Template
+# Application pour une Pizzeria
 
-The official NativeBase TypeScript template for [Expo](https://docs.expo.io/)
+## Technologies utilisées :
 
-## Usage
+### 🧰 Frontend
 
-```sh
-expo init my-app --template @native-base/expo-template-typescript
-```
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+
+### 📱 UI
+
+![NativeBase](https://deleau-victor-pro.npkn.net/native-base-badge/)
+
+
+
